@@ -130,7 +130,6 @@ then
         sed -i "/^bssid=/c\bssid=$NEW_MAC" /nvram/hostapd8.conf
         sed -i "/^interface=/c\interface=wifi8" /nvram/hostapd8.conf
         sed -i "/^accept_mac/c\accept_mac_file=/tmp/hostapd-acl8"  /nvram/hostapd8.conf
-        echo "wpa_psk_file=/tmp/hostapd8.psk" >> /nvram/hostapd8.conf
 fi
 
 if [ ! -f /nvram/hostapd9.conf ]
@@ -141,7 +140,6 @@ then
         sed -i "/^bssid=/c\bssid=$NEW_MAC" /nvram/hostapd9.conf
         sed -i "/^interface=/c\interface=wifi9" /nvram/hostapd9.conf
         sed -i "/^accept_mac/c\accept_mac_file=/tmp/hostapd-acl9"  /nvram/hostapd9.conf
-        echo "wpa_psk_file=/tmp/hostapd9.psk" >> /nvram/hostapd9.conf
 fi
 
 #Setting up VAP status file

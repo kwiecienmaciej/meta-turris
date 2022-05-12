@@ -19,6 +19,7 @@ SRC_URI += " \
     file://ath-reg.cfg \
     file://conntrack.cfg \
     file://gre-fix.cfg \
+    file://enable-tproxy.cfg \
 "
 
 DEPENDS += " u-boot"
